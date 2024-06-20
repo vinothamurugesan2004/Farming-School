@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: #9fdba5; 
+        }
+        ul {
+            list-style: none;
+            margin: 0px;
+            padding: 0px;
+            background-color: rgb(99, 192, 99); 
+            overflow: hidden;
+        }
+        ul li {
+            float: left;
+        }
+        ul li a {
+            color: #fffbfb; 
+            display: block;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-family:"'Libre Franklin', sans-serif" ; 
+            font-size: 20px; 
+         
+        }
+        h1 {
+            font-family:"Poppins", sans-serif;
+            color: rgb(255, 255, 255); 
+        }
+        p {
+            font-family:"Cormorant Garamond", serif;
+            text-align: justify;
+            padding: 10px;
+            color: #333; 
+        }
+    </style>
+</head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="Gallery.html">Gallery</a></li>
+            <li><a href="transport.html">Transport</a></li>
+            <li><a href="form.html">Application Form</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <h1><center>Visitors Register Form</center></h1>
+    <center>
+    <form action="register.py" method="post">
+        <table>
+            <tr><td>Name</td><td><input type="Name" name="name" placeholder="Enter the Name"></td></tr>
+            <tr><td>Age</td><td><input type="number" name="age" placeholder="Enter the Age"></td></tr>
+            <tr><td>Phone Number</td><td><input type="number" name="phone" placeholder="Enter the phone number"></td></tr>
+            <tr><td>Email Address</td><td><input type="email" name="email" placeholder="Enter the Email address"></td></tr>
+            <tr><td>Gender</td><td>
+                <input type="radio" name="gender" value="Male">Male
+                <input type="radio" name="gender" value="Female">Female
+                <input type="radio" name="gender" value="Others">Others               
+            </td></tr>
+            <tr><td>Address</td><td><input type="address" name="address" placeholder="Enter the address"></td></tr>
+            <tr><td>Education</td><td><input type="education" name="education" placeholder="Enter your qualification"></td></tr>
+            <tr><td>Visitor</td><td>
+                <input type="radio" name="visitor" value="Individual">Individual
+                <input type="radio" name="visitor" value="Couples">Couples
+                <input type="radio" name="visitor" value="Group">Group
+            </td></tr>
+            <tr><td><input type="submit" value="Register"></td></tr>
+
+        </table>
+    </form>
+    </center>
+
+</body>
+</html>
